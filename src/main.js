@@ -2,8 +2,8 @@ import Vue from 'vue';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
 import App from './App.vue';
-import router from './router/index';
-import store from './store/index';
+import { createStore } from './store';
+import { createRouter } from './router';
 
 Vue.config.productionTip = false;
 
@@ -22,6 +22,9 @@ function registerAxios() {
  *  create application
  */
 function createApp() {
+
+	const store = createStore();
+	const router = createRouter();
 
 	registerAxios();
 
