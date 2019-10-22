@@ -1,5 +1,5 @@
 /**
- * @const ADD_NOTIFICATION
+ * @const SET_DEGREE_LIST
  * @type {string}
  */
-export const ADD_NOTIFICATION = 'ADD_NOTIFICATION';
+export const SET_DEGREE_LIST = 'SET_DEGREE_LIST';

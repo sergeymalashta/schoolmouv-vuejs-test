@@ -19,9 +19,7 @@
 			<span>Classe</span>
 			<select v-model="formData.degree">
 				<option disabled value="">Выберите один из вариантов</option>
-				<option>А</option>
-				<option>Б</option>
-				<option>В</option>
+				<option :value="item.name" v-for="item in degreeList">{{	item.name	}}</option>
 			</select>
 		</div>
 		<input type="submit" class="btn"/>

@@ -10,4 +10,7 @@ export default {
 	checkEmail(email) {
 		return Vue.axios.get(endpoints.checkEmail, { params: { email } });
 	},
+	getDegree() {
+		return Vue.axios.get(endpoints.degrees);
+	}
 };

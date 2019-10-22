@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <sign-up-form />
+    <sign-up-form @submit-form="$router.push({ name: 'details' })" />
   </div>
 </template>
 
