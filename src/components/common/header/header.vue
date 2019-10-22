@@ -1,7 +1,5 @@
 <template>
-    <div class="header">
-        <pre v-text="$attrs"/>
-    </div>
+    <header class="header"></header>
 </template>
 
 <script>
