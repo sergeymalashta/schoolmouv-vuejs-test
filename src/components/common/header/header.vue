@@ -1,10 +1,7 @@
 <template>
-    <header class="header"></header>
+	<header class="header"></header>
 </template>
 
 <script>
-    export default {
-        props: {
-        },
-    };
+export default {};
 </script>
