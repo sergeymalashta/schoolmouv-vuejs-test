@@ -1,30 +1,43 @@
 <template>
-	<form class="sign-up">
-		<gender-switch v-model="formData.gender" />
+	<form class="signup-form" @submit.prevent="handleSubmit">
+		<div class="row">
+			<custom-input
+				v-model="formData.email"
+				type="email"
+				:placeholderTxt="'Email'"
+				:isValid="true"
+			/>
+		</div>
+		<div class="row">
+			<custom-input
+				v-model="formData.password"
+				type="password"
+				:placeholderTxt="'Mot de passe'"
+				:isValid="true"
+			/>
+		</div>
+		<input type="submit" class="btn"/>
 	</form>
 </template>
 
 <script>
-import { GenderSwitch } from '../gender-switch';
-export default {
-	components: {
-		GenderSwitch
-	},
-	props: {
-		degreeList: {
-			type: Array,
-			default: () => []
-		}
-	},
-	data() {
-		return {
-			formData: {
-				gender: null,
-				firstname: '',
-				lastname: '',
-				degree: ''
+	import { CustomInput } from '../custom-input';
+	export default {
+		components: {
+			CustomInput
+		},
+		data() {
+			return {
+				formData: {
+					email: '',
+					password: ''
+				}
+			};
+		},
+		methods: {
+			handleSubmit() {
+				this.$emit('submit-form', this.formData);
 			}
-		};
+		}
 	}
-}
 </script>

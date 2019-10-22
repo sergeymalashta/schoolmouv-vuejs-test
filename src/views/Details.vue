@@ -1,12 +1,15 @@
 <template>
-	<div class="header">
-		<pre v-text="$attrs"/>
+	<div class="details">
+		<details-form />
 	</div>
 </template>
 
 <script>
+	import { DetailsForm } from '../components/forms';
+
 	export default {
-		props: {
-		},
-	};
+		components: {
+			DetailsForm
+		}
+	}
 </script>
