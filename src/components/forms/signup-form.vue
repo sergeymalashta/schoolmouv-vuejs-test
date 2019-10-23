@@ -1,5 +1,5 @@
 <template>
-	<form class="signup-form" @submit.prevent="handleSubmit">
+	<form class="form signup-form" @submit.prevent="handleSubmit">
 		<div class="row">
 			<custom-input
 				v-model="formData.email"
@@ -16,7 +16,9 @@
 				:isValid="true"
 			/>
 		</div>
-		<input type="submit" class="btn"/>
+		<div class="row">
+			<input type="submit" class="btn" value="Je m'inscris"/>
+		</div>
 	</form>
 </template>
 

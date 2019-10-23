@@ -1,11 +1,4 @@
 .details {
-	position: absolute;
+	@include to-center(300px, 300px);
 	background: antiquewhite;
-	width: 300px;
-	height: 300px;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	margin: auto;
 }

@@ -9,7 +9,11 @@ body {
 
 body {
 	margin: 0;
+	font-family: $primary-font;
 	font-weight: 400;
-	font-size: 1.4rem;
+	font-size: 0.8rem;
+	line-height: $line-height;
+	color: $primary-text;
+	background-color: $primary-background;
 	overflow-x: hidden;
 }
