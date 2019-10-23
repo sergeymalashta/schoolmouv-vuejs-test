@@ -1,10 +1,10 @@
 .custom-input {
 	background: white;
+	margin: 10px;
 	border-radius: 25px;
 	border: 1px solid $input-border;
 	cursor: text;
 	height: 50px;
-	margin: 0 auto;
 
 	&.active {
 		border: 1px solid $input-border-active;
@@ -19,14 +19,13 @@
 		box-sizing: border-box;
 		left: 0;
 		border: none;
-		margin: 0 auto;
 		top: 15px;
 		opacity: 1;
 		height: 20px;
 		padding-left: 20px;
 		margin-left: 4px;
 		position: relative;
-		width: 97%;
+		width: 95%;
 		outline: none;
 	}
 

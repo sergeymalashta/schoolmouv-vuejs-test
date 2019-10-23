@@ -2,6 +2,10 @@
 	padding-top: 20px;
 	.row {
 		padding: 10px;
+		&.in-line {
+			display: flex;
+			padding: 0;
+		}
 	}
 	.btn {
 		border-radius: 25px;

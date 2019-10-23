@@ -1,9 +1,9 @@
 <template>
-	<form class="details-form" @submit.prevent="handleSubmit">
+	<form class="form details-form" @submit.prevent="handleSubmit">
 		<div class="row">
 			<gender-switch v-model="formData.gender" />
 		</div>
-		<div class="row">
+		<div class="row in-line">
 			<custom-input
 				v-model="formData.firstname"
 				:placeholderTxt="'Prénom'"
@@ -19,10 +19,12 @@
 			<span>Classe</span>
 			<select v-model="formData.degree">
 				<option disabled value="">Выберите один из вариантов</option>
-				<option :value="item.name" v-for="item in degreeList">{{	item.name	}}</option>
+				<option :value="item.name" v-for="item in degreeList" :key="item.id">{{	item.name	}}</option>
 			</select>
 		</div>
-		<input type="submit" class="btn"/>
+		<div class="row">
+			<input type="submit" class="btn"/>
+		</div>
 	</form>
 </template>
 
