@@ -29,4 +29,11 @@
 		width: 97%;
 		outline: none;
 	}
+
+	&--error-message {
+		top: 30px;
+		position: relative;
+		color: $input-message-error;
+		float: right;
+	}
 }

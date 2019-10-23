@@ -5,6 +5,7 @@
 				v-model="formData.email"
 				type="text"
 				:placeholderTxt="'Email'"
+				:errorTxt="errorRequest"
 				:isValid="formValidation.email"
 			/>
 		</div>
@@ -31,6 +32,12 @@
 	};
 
 	export default {
+		props: {
+			errorRequest: {
+				type: String,
+				default: ''
+			}
+		},
 		components: {
 			CustomInput
 		},

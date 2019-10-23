@@ -1,5 +1,11 @@
 /**
- * @const ADD_NOTIFICATION
+ * @const SET_ERRORS
  * @type {string}
  */
-export const ADD_NOTIFICATION = 'ADD_NOTIFICATION';
+export const SET_ERRORS = 'SET_ERRORS';
+
+/**
+ * @const CLEAR_ERRORS
+ * @type {string}
+ */
+export const CLEAR_ERRORS = 'CLEAR_ERRORS';

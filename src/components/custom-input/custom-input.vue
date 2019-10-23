@@ -10,6 +10,7 @@
 			@focus="onFocus"
 			@blur="focused = false"
 		/>
+		<span class="custom-input--error-message">{{ errorTxt }}</span>
 	</div>
 </template>
 
@@ -22,6 +23,10 @@
 				default: 'text'
 			},
 			placeholderTxt: {
+				type: String,
+				default: ''
+			},
+			errorTxt: {
 				type: String,
 				default: ''
 			},
