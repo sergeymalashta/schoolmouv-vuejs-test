@@ -1,12 +1,12 @@
 <template>
 	<div :class="['custom-input', { 'active': focused && isValid, 'errored': !isValid }]">
-		<!--<div class="custom-input&#45;&#45;text">{{ placeholderTxt }}</div>-->
 		<input
 			:type="type"
 			autocomplete="off"
 			v-model="inputStr"
 			:placeholder="placeholderTxt"
 			readonly
+			@input="$emit('input', inputStr)"
 			@focus="onFocus"
 			@blur="focused = false"
 		/>
@@ -19,7 +19,7 @@
 			value: {},
 			type: {
 				type: String,
-				default: 'test'
+				default: 'text'
 			},
 			placeholderTxt: {
 				type: String,
