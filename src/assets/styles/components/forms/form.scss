@@ -4,12 +4,11 @@
 		padding: 10px;
 		&.in-line {
 			display: flex;
-			padding: 0;
 		}
 	}
 	.btn {
 		border-radius: 25px;
-		background: linear-gradient(to right, #f84282, #f78e53);
+		background: linear-gradient(to right, $pink, $orange);
 		border: none;
 		height: 50px;
 		font-weight: bold;
@@ -18,8 +17,12 @@
 		width: 100%;
 		margin: 0 auto;
 		outline: none;
+
 		&:hover {
 			opacity: 1;
+		}
+		&:active {
+			background: $pink;
 		}
 	}
 }

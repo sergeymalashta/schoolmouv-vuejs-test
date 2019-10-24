@@ -1,6 +1,6 @@
 //fonts
 $line-height: 1.48;
-$primary-font: 'Roboto', sans-serif;
+$primary-font: Arial, sans-serif;
 
 //breakpoints
 $mobile: 480px;
@@ -16,12 +16,15 @@ $gainsboro: #dadada;
 $dark-slate-gray: #283f57;
 $royal-blue: #2c65c8;
 $crimson: #c8582c;
+$pink: #f84282;
+$orange: #f78e53;
 $gray: #666;
 
 $header-main-color: #f9f4f1;
 $header-border-color: #f3ece6;
 $primary-text: $dark-slate-gray;
 $primary-background: $white;
+$input-background: $white;
 $input-border: $gainsboro;
 $input-border-active: $royal-blue;
 $input-border-error: $crimson;

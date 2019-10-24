@@ -1,21 +1,16 @@
 .custom-input {
-	background: white;
-	margin: 0 10px;
-	border-radius: 25px;
-	border: 1px solid $input-border;
-	cursor: text;
-	height: 50px;
-
-	&.active {
-		border: 1px solid $input-border-active;
-	}
 
 	&.errored {
-		border: 1px solid $input-border-error;
+		input {
+			border-color: $input-border-error
+		}
 	}
 
 	input {
 		@include custom-input-field;
+		&:focus {
+			border-color: $input-border-active;
+		}
 	}
 
 	&--error-message {

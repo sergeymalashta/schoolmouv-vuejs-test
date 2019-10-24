@@ -1,5 +1,5 @@
 <template>
-	<div :class="['custom-input', { 'active': focused && isValid, 'errored': !isValid }]">
+	<div :class="['custom-input', { 'errored': !isValid }]">
 		<input
 			:type="type"
 			autocomplete="off"

@@ -1,18 +1,9 @@
 .details-form {
 	&--custom-select {
-		border-radius: 25px;
-		background: $white;
-		height: 50px;
-		font-weight: bold;
-		opacity: 0.9;
-		width: 70%;
-		outline: none;
-		position: relative;
-		left: 10px;
-		border: 1px solid $input-border;
-
 		&.errored {
-			border: 1px solid $input-border-error;
+			select {
+				border-color: $input-border-error;
+			}
 		}
 	}
 
@@ -28,5 +19,7 @@
 
 	select {
 		@include custom-input-field;
+		width: 200px;
+		margin-left: 20px;
 	}
 }
