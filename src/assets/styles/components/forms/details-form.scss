@@ -10,6 +10,10 @@
 		position: relative;
 		left: 10px;
 		border: 1px solid $input-border;
+
+		&.errored {
+			border: 1px solid $input-border-error;
+		}
 	}
 
 	&--selection-group {

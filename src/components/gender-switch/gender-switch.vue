@@ -16,8 +16,19 @@ export default {
 	props: ['value'],
 	data() {
 		return {
-			gender: ''
+			gender: 'Boy'
 		};
+	},
+	watch: {
+		gender: 'onChange'
+	},
+	mounted() {
+		this.onChange(); //initialize
+	},
+	methods: {
+		onChange() {
+			this.$emit('input', this.gender);
+		}
 	}
 };
 </script>
