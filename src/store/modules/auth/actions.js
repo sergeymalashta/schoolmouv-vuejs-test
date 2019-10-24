@@ -5,8 +5,7 @@ export default {
 	createUser: async ({ dispatch, commit, getters }, formData) => {
 		commit(types.SET_FORM_DATA, formData);
 		try {
-			const data = await service.createUser(getters['formData']);
-			console.info(data);
+			await service.createUser(getters['formData']);
 			dispatch('ui/showModal', { type: 'result-modal' }, { root: true });
 		} catch (e) {
 			console.error(e.toString());
