@@ -1,7 +1,9 @@
 <template>
 	<div>
 		<main-header />
-		<router-view />
+		<transition name="slideRight">
+			<router-view />
+		</transition>
 	</div>
 </template>
 

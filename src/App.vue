@@ -16,5 +16,6 @@ export default {
 </script>
 
 <style lang="scss">
+	@import "~vue2-animate/src/sass/vue2-animate";
 	@import "assets/styles/index";
 </style>
