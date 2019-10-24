@@ -16,14 +16,18 @@
 			/>
 		</div>
 		<div class="row">
-			<span>Classe</span>
-			<select v-model="formData.degree">
-				<option disabled value="">Выберите один из вариантов</option>
-				<option :value="item.name" v-for="item in degreeList" :key="item.id">{{	item.name	}}</option>
-			</select>
+			<div class="details-form--selection-group">
+				<span class="details-form--selection-group_label">Classe</span>
+				<div class="details-form--custom-select">
+					<select v-model="formData.degree">
+						<option disabled value="">Liste</option>
+						<option :value="item.name" v-for="item in degreeList" :key="item.id">{{	item.name	}}</option>
+					</select>
+				</div>
+			</div>
 		</div>
 		<div class="row">
-			<input type="submit" class="btn"/>
+			<input type="submit" value="C'est parti" class="btn"/>
 		</div>
 	</form>
 </template>
@@ -45,7 +49,7 @@ export default {
 	data() {
 		return {
 			formData: {
-				gender: null,
+				gender: 'Boy',
 				firstname: '',
 				lastname: '',
 				degree: ''

@@ -1,6 +1,16 @@
-@mixin margin-center {
-	margin-right: auto;
-	margin-left: auto;
+@mixin custom-input-field {
+	bottom: 0;
+	box-sizing: border-box;
+	left: 0;
+	border: none;
+	top: 15px;
+	opacity: 1;
+	height: 20px;
+	padding-left: 20px;
+	margin-left: 4px;
+	position: relative;
+	width: 95%;
+	outline: none;
 }
 
 @mixin to-center($width, $height) {

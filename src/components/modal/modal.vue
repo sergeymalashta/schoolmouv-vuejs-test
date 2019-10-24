@@ -1,5 +1,5 @@
 <template>
-	<div class="overlay" v-if="modals.length > 0">
+	<div class="overlay" v-if="modals.length">
 		<transition appear name="fade" mode="out-in">
 			<div>
 				<template v-for="(md, i) in modals">

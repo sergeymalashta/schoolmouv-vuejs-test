@@ -1,0 +1,27 @@
+.details-form {
+	&--custom-select {
+		border-radius: 25px;
+		background: $white;
+		height: 50px;
+		font-weight: bold;
+		opacity: 0.9;
+		width: 70%;
+		outline: none;
+		position: relative;
+		left: 10px;
+		border: 1px solid $input-border;
+	}
+
+	&--selection-group {
+		display: flex;
+		justify-content: space-around;
+		&_label {
+			position: relative;
+			top: 15px
+		}
+	}
+
+	select {
+		@include custom-input-field;
+	}
+}

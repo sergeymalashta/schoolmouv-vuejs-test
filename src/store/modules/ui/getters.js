@@ -1,3 +1,4 @@
 export default {
-	degreeList: state => state.degreeList
+	degreeList: state => state.degreeList,
+	modals: state => state.modals
 };
