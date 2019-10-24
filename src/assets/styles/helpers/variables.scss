@@ -16,6 +16,7 @@ $gainsboro: #dadada;
 $dark-slate-gray: #283f57;
 $royal-blue: #2c65c8;
 $crimson: #c8582c;
+$gray: #666;
 
 $header-main-color: #f9f4f1;
 $header-border-color: #f3ece6;
@@ -25,3 +26,6 @@ $input-border: $gainsboro;
 $input-border-active: $royal-blue;
 $input-border-error: $crimson;
 $input-message-error: $crimson;
+
+//popup
+$popup-overlay: $gray;

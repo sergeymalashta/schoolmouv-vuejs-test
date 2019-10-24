@@ -3,9 +3,9 @@ import uid from 'uid';
 import service from '../../../services'
 
 export default {
-	showModal: ({ commit }, { type, ...props }) => {
+	showModal: ({ commit }, { type }) => {
 		const id = uid();
-		commit(types.SHOW_MODAL, { id, type, props });
+		commit(types.SHOW_MODAL, { id, type });
 	},
 	hideModal: ({ commit }, modalName = null) => {
 		commit(types.HIDE_MODAL, modalName);

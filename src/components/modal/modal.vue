@@ -1,22 +1,15 @@
 <template>
-	<div class="overlay" v-if="modals.length">
-		<transition appear name="fade" mode="out-in">
-			<div>
-				<template v-for="(md, i) in modals">
-					<div class="modal" :key="i">
-						<div class="close">
-							<span @click="hideModal(md.type)"></span>
-						</div>
-						<component
-							:is="md.type"
-							v-bind="md.props"
-							@closeModal="hideModal"
-						>
-						</component>
-					</div>
-				</template>
-			</div>
-		</transition>
+	<div class="popup" v-if="modals.length" @click="hideModal()">
+		<div class="popup-container">
+			<transition-group
+				name="fade"
+				mode="out-in"
+			>
+				<div v-for="modal in modals" :key="`modal_${modal.id}`">
+					<component :is="modal.type" />
+				</div>
+			</transition-group>
+		</div>
 	</div>
 </template>
 
@@ -45,11 +38,12 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style scoped>
 	.fade-enter-active,
 	.fade-leave-active {
-		transition: opacity .5s;
+		transition: opacity 0.5s;
 	}
+
 	.fade-enter,
 	.fade-leave-to {
 		opacity: 0;

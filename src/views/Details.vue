@@ -2,6 +2,7 @@
 	<div class="details">
 		<details-form
 			:degreeList="degreeList"
+			@submit-form="createUser"
 		/>
 	</div>
 </template>
@@ -21,7 +22,8 @@ export default {
 		this.getDegreeList();
 	},
 	methods: {
-		...mapActions('ui', ['getDegreeList'])
+		...mapActions('ui', ['getDegreeList']),
+		...mapActions('auth', ['createUser'])
 	}
 };
 </script>

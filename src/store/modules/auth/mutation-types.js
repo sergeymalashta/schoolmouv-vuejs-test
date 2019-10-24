@@ -1,4 +1,10 @@
 /**
+ * @const SET_FORM_DATA
+ * @type {string}
+ */
+export const SET_FORM_DATA = 'SET_FORM_DATA';
+
+/**
  * @const SET_ERRORS
  * @type {string}
  */
