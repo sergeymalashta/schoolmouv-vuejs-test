@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<main-header />
-		<transition name="slideRight">
+		<transition name="bounceUp">
 			<router-view />
 		</transition>
 	</div>
