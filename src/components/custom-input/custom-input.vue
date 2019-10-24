@@ -8,7 +8,6 @@
 			readonly
 			@input="$emit('input', inputStr)"
 			@focus="onFocus"
-			@blur="focused = false"
 		/>
 		<span class="custom-input--error-message">{{ errorTxt }}</span>
 	</div>
@@ -37,13 +36,11 @@
 		},
 		data() {
 			return {
-				inputStr: '',
-				focused: false
+				inputStr: ''
 			};
 		},
 		methods: {
 			onFocus(el) {
-				this.focused = true;
 				el.target.removeAttribute('readonly');
 			}
 		}

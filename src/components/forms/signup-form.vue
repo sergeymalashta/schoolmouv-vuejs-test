@@ -26,11 +26,6 @@
 <script>
 	import { CustomInput } from '../custom-input';
 
-	const formFields = {
-		email: '',
-		password: ''
-	};
-
 	export default {
 		props: {
 			errorRequest: {
@@ -43,11 +38,14 @@
 		},
 		data() {
 			return {
-				formData: Object.assign({}, formFields),
-				formValidation: Object.assign({}, Object.entries(formFields).reduce((acc, [key]) => ({
-					...acc,
-					[key]: true
-				}), {}))
+				formData: {
+					email: '',
+					password: ''
+				},
+				formValidation: {
+					email: true,
+					password: true
+				}
 			};
 		},
 		methods: {

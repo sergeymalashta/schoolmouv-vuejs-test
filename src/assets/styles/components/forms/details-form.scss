@@ -10,10 +10,11 @@
 	&--selection-group {
 		margin-top: 10px;
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 		&_label {
 			position: relative;
-			top: 15px
+			top: 15px;
+			left: 15px;
 		}
 	}
 

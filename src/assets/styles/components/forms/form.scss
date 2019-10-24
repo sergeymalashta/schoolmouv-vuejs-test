@@ -1,9 +1,18 @@
 .form {
 	padding-top: 20px;
 	.row {
-		padding: 10px;
+		padding: 10px 0;
 		&.in-line {
 			display: flex;
+			input {
+				width: 95%;
+				margin: 0;
+			}
+			:last-child {
+				input {
+					margin-left: 8px;
+				}
+			}
 		}
 	}
 	.btn {

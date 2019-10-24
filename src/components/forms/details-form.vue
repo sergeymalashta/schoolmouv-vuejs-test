@@ -36,13 +36,6 @@
 import { GenderSwitch } from '../gender-switch';
 import { CustomInput } from '../custom-input';
 
-const formFields = {
-	gender: '',
-	firstname: '',
-	lastname: '',
-	degree: ''
-};
-
 export default {
 	components: {
 		GenderSwitch,
@@ -56,11 +49,18 @@ export default {
 	},
 	data() {
 		return {
-			formData: Object.assign({}, formFields),
-			formValidation: Object.assign({}, Object.entries(formFields).reduce((acc, [key]) => ({
-				...acc,
-				[key]: true
-			}), {}))
+			formData: {
+				gender: '',
+				firstname: '',
+				lastname: '',
+				degree: ''
+			},
+			formValidation: {
+				gender: true,
+				firstname: true,
+				lastname: true,
+				degree: true
+			}
 		};
 	},
 	methods: {
